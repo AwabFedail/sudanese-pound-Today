@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>SDG Today</title>
+		<link rel="stylesheet" type="text/css" href="css.css">
+		
+		<meta name="keywords" content="سعر الدولار اليوم مقابل الجنيه السوداني"/>
+		<meta name="keywords" contant="the Euro price against the Sudanese pound"/>
+		<meta name="keywords" contant="foreign exchange rates against the sudanese pound"/>
+		<meta name="keywords" content="اسعار العملات في السوق الاسود في السودان"/>
+		<meta name="keywords" content="سعر اليورو مقابل الجنيه السوداني في السوق الاسود"/>
+		<meta name="keywords" content="سعر الدولار مقابل الجنيه السوداني في السوق الاسود"/>
+		<meat name="keywords" content="اسعار العملات الاجنبيه في السوق الاسود مقابل الجنيه السوداني"/>
+		<meta name="keywords" content="the dollar price against the Sudanese pound"/>
+		<meta name="keywords" content="سعر الجنيه المصري مقابل الجنيه السوداني في السوق الاسود"/>
+		<meta name="keywords" content="SDG Today"/>
+		<meta name="keywords" content="الجنيه السوداني اليوم"/>
+		<meta name="keywords" content="موقع حساب العملات الاجنبيه مقابل الجنيه السوداني"/>
+		<meta name="keywords" content="سعر الريال السعودي مقابل الجنيه السوداني في السوق الاسود"/>
+		<meta name="keywords" content="سعر الاسترليني مقابل الجنيه السوداني في السوق الاسود"/>
+		<meta name="keywords" content="سعر الريال القطري مقابل الجنيه السوداني"/>
+		<meta name="description" content="Here You Can Calculet Some Foreign Exchange Rates Against The Sudanese Pound By Bank Price Or By Black Market Price"/>
+		<meta name="author" content="Awab Mohammed Kheir Abd-alrahman Ahmed Fedail"/>
+		<meta name="author" content="Awab Fedail"/>
+		<style>
+			*
+			{
+				-webk it-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+			
+body
+{
+	margin: 0;
+	border-bottom: 0;
+	text-transform: capitalize;
+}
+#header
+{
+	background: #2F4F4F;
+	color:#fff;
+	font-family: Arial Rounded MT;
+	padding: 5px;
+	display: block;
+	font-size: 20px;
+	margin: 0
+
+}
+#warring
+{
+	font-weight: 700;
+	font-family: trebuchet ms;
+	background-color: red;
+	color: #FFF;
+	text-align: center;
+	font-size: 25px;
+	padding: 5px;
+	display: block;
+	margin: 0
+}
+label
+{
+	background-color: #2F4F4F;
+	color:#fff;
+	display: block;
+	margin-top: 30px;
+	width: 30%;
+	padding: 5px;
+	font-size: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-family: arial;
+	border-radius: 10px
+}
+input
+{
+	margin-top: 25px;
+	margin-left: 5px;
+	margin-right: 0px;
+	border-bottom: 1px solid #676767;
+	border-left: 1px solid #676767;
+	width: 170px;
+	border: none;
+	box-shadow: 0 0 2px;
+	border-radius: 20px;
+	height: 25px;
+}
+input:hover
+{
+	box-shadow: 0 0 7px;
+	transition: box-shadow .2s;
+}
+select
+{
+	border-radius: 25px;
+	height: 25px;
+	border: none;
+	box-shadow: 0 0 2px;
+}
+select:hover
+{
+	box-shadow: 0 0 5px;
+}
+#result
+{
+	background-color: #2F4F4F;
+	color: white;
+	margin-top: 10px;
+	width: 30%;
+	text-indent: 10px
+}
+#result:hover
+{
+	padding: 5px;
+	transition: padding .1s;
+}
+footer
+{
+	margin-top: 30%;
+	background-color: #2F4F4F;
+	box-shadow: 0 0 30px;
+	height: auto !important
+	height: 500px;	
+	min-height: 82%;
+	width: auto;
+}
+a
+{
+	text-decoration: none;
+	color: #fff;
+}
+hr
+{
+	opacity: .2;
+	margin-bottom: 40px
+	color: #ddd;
+}
+#resulteuro
+{
+	background-color: #2F4F4F;
+	margin-top: 10px;
+	width: 30%;
+	color: white;
+	text-indent: 10px;
+}
+#resulteuro:hover
+{
+	padding: 5px ;
+	transition: padding .1s;
+}
+#resultsar
+{
+	background-color: #2F4F4F;
+	margin-top: 10px;
+	width: 30%;	
+	color: white;
+	text-indent: 10px;
+}
+#resultsar:hover
+{
+	padding: 5px ;
+	transition: padding .1s;
+}
+#resultSterling
+{
+	background-color: #2F4F4F;
+	margin-top: 10px;
+	width: 30%;	
+	color: white;
+	text-indent: 10px;
+}
+#resultSterling:hover
+{
+	padding: 5px ;
+	transition: padding .1s;
+}
+h2
+{	
+	font-family: trebuchet ms;
+	border-radius: 10px;
+	width: 101px;
+	text-align: center;
+	background-color: #2F4F4F;
+	color: white;
+	margin-left: 5px
+}
+#resultegyption
+{
+	background-color: #2F4F4F;
+	color: white;
+	margin-top: 10px;
+	width: 30%;
+	text-indent: 10px;
+}
+#resultegyption:hover
+{
+	padding: 5px ;
+	transition: padding .1s;
+}
+a:hover
+{
+	color: #aaa
+}
+#resultdirham
+{
+	background-color: #2F4F4F;
+	color: white;
+	margin-top: 10px;
+	width: 30%;
+	text-indent: 10px;
+}
+#resultdirham:hover
+{
+	padding: 5px;
+	transition: padding .1s;
+}
+span
+{
+	color: white;
+	font-size: 60px;
+	font-family: trebuchet ms;
+	padding-left: 20px;
+
+}
+.email
+{
+	box-shadow: 0 0 20px #000;
+	font-size: 30px;
+	float: right;
+	margin-right: 10px
+	margin-top: -1px
+
+}
+#resultqar
+{
+	background-color: #2F4F4F;
+	color: white;
+	margin-top: 10px;
+	width: 30%;
+	text-indent: 10px;
+}
+#resultqar:hover
+{
+	padding: 5px;
+	transition: padding .1s;
+}
+.source
+{
+	display: block;
+	font-size: 15px;
+	box-shadow: 0 0 20px #000;
+	width: 400px;
+	padding: 5px;
+	margin-top: 100px;
+	margin-bottom: 5px;
+}
+dd
+{
+	width: 500px;
+	box-shadow: 0 0 40px;
+	text-indent: 70px;
+}
+ul
+{
+	color: #eee;
+	width: 500px;
+	font-family: trebuchet ms
+}
+.Arabic
+{
+	font-size: 20px;
+	border-right: 5px solid white;
+	color: #2F4F4F;
+	background-color: #fff;
+	margin-left: 41px;
+	box-shadow: 0 0 10px #000;
+}
+/* line*/
+.footer
+{
+	margin-bottom: -5px;
+	border: 1px solid #aaa;
+	width: 520px;
+}
+/*line*/
+.ff
+{
+	border: 1px solid #aaa;
+	width: 520px;
+}
+#resultkwd
+{
+	background-color: #2F4F4F;
+	color: white;
+	margin-top: 10px;
+	width: 30%;
+	text-indent: 10px;
+}
+#resultkwd:hover
+{
+	padding: 5px;
+	transition: padding .1s;
+}
+h3
+{
+	color: #fff;
+	font-family: trebuchet ms;
+}
+	</style>
+	</head>
+	<body>
+		<div id="header">
+		<h1><center>Here you can calculate some foreign exchange rates against the Sudanese pound.</center></h1>
+		</div>
+		<div id="warring">
+		<svg class="bi bi-exclamation-triangle-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  		<path fill-rule="evenodd" d="M8.982 1.566a1.13 1.13 0 00-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5a.905.905 0 00-.9.995l.35 3.507a.552.552 0 001.1 0l.35-3.507A.905.905 0 008 5zm.002 6a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd"/>
+		</svg>
+		The black market price is unstable</div>
+
+		 	<!-- ************************************************************* -->
+		 	<!-- ************************  DOLLAR  *************************** -->
+		 	<!-- ************************************************************* -->
+		 	<div class="post">	<h2>DOLLAR</h2>
+		<label class="label1">Here You Can calculat The Dollar Price:</label>
+		<input type="text" id="dollar" placeholder="Enter The Number" maxlength="7">
+		<select id="currency">
+		<option value="55.27" selector> By Bank price</option>
+		<option value="142.00"> By Black Market price</option>
+		</select>
+		<div id="result"></div>
+		<hr>
+			<!-- ************************************************************* -->
+		 	<!-- ************************  EURO  ***************************** -->
+		 	<!-- ************************************************************* -->
+		 	<h2>Euro</h2>
+		<label>Here you can calculet The Euro Price:</label>
+		<input type="text" id="euro" placeholder="Enter The Number">
+		<select id="currencye">
+		<option value="61.47"> By Bank price</option>
+		<option value="153"> By Black Market price</option>
+		</select>
+		<div id="resulteuro"></div>
+		<hr>
+			<!-- ************************************************************* -->
+		 	<!-- ************************  SAR  ****************************** -->
+		 	<!-- ************************************************************* -->
+		 	<h2>SAR</h2>
+		<label>Her You Can Calculet The SAR price :</label>
+		<input type="text" id="sar" placeholder="Enter The Number">
+		<select id="currencysar">
+		<option value="14.72">  By Bank price</option>
+	    <option value="38.00">  By Black Market price</option>
+		</select>
+	    <div id="resultsar"></div>
+		<hr>
+			<!-- ************************************************************* -->
+		 	<!-- ************************  sterling  ************************* -->
+		 	<!-- ************************************************************* -->
+		 	<h2>Sterling Pound (GBP)</h2>
+		<label>Here You Can Calculet The Sterling Pound Price :</label>
+		<input type="text" id="Sterling" placeholder="Enter The Number">
+		<select id="selectSterling">
+		<option value="68.19">  By Bank price</option>
+		<option value="174.00">  By Black Market price</option>
+		</select>
+		<div id="resultSterling"></div>
+		<hr>
+			<!-- ************************************************************* -->
+		 	<!-- ************************  Egyptian Pound  ******************* -->
+		 	<!-- ************************************************************* -->
+		 	<h2>Egyptian Pound</h2>
+		<label>Here You Can Calculet The Egyptian Pound Price :</label>
+		<input type="text" id="egyptianPound" placeholder="Enter The Number">
+		<select id="selectegypt">
+		<option value="4.68">  By Bank Price</option>
+		<option value="9.00">By Black Market Price</option>
+		</select>
+		<div id="resultegyption"></div>
+		<hr>
+		 	<!-- ************************************************************* -->
+		 	<!-- ************************  UAE Dirham  *********************** -->
+		 	<!-- ************************************************************* -->
+		 	<h2> UAE Dirham (AED)</h2>
+		<label>Here You Can Calculet The UAE Dirham Price :</label>
+		<input type="text" id="dirham" placeholder="Enter The Number">
+		<select id="selectdirham">
+		<option value="15.05">By Banck Price</option>
+		<option value="40.00">By Black Market Price</option>
+		</select>
+		<div id="resultdirham"></div>
+		<hr/>
+			<!-- ************************************************************* -->
+		 	<!-- ************************  Qatari Riyal  ********************* -->
+		 	<!-- ************************************************************* -->
+		 	<h2>Qatari Riyal (QAR)</h2>
+		<label>Here You Can Calculet The Qatari Riyal Price :</label>
+		<input type="text" id="qar" placeholder="Enter The Number">
+		<select id="selectqar">
+		<option selected value="15.18">By Bank Price</option>
+		<option value="39.00">By Black Market Price</option>
+		</select>
+		<div id="resultqar"></div>
+		<hr/>
+			<!-- ************************************************************* -->
+		 	<!-- ************************  KWD  ****************************** -->
+		 	<!-- ************************************************************* -->
+		 	<h2>Kuwaiti Dinar (KWD) </h2>
+		<label>Here You Can Calculet The Kuwaiti Dinar :</label>
+		<input type="text" id="kwd" placeholder="Enter The Number">
+		<select id="selectkwd">
+		<option value="177.73">By Bank Price</option>
+		<option value="264.00">By Black Market Price</option>
+		</select>
+		<div id="resultkwd"></div>
+		<hr/>
+	</div>
+	 	<footer>
+	 		<dd><span>Let`s Talk </span><br/>
+	 		<span>&nbsp; About Your</span><br/>
+	 		<span><kbd><i>&nbsp;Project</i></kbd></span></dd><br>
+	 		<span class="email"><svg class="bi bi-envelope" width=".7em" height=".7em" color="white" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					  <path fill-rule="evenodd" d="M14 3H2a1 1 0 00-1 1v8a1 1 0 001 1h12a1 1 0 001-1V4a1 1 0 00-1-1zM2 2a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2H2z" clip-rule="evenodd"/>
+					  <path fill-rule="evenodd" d="M.071 4.243a.5.5 0 01.686-.172L8 8.417l7.243-4.346a.5.5 0 01.514.858L8 9.583.243 4.93a.5.5 0 01-.172-.686z" clip-rule="evenodd"/>
+					  <path d="M6.752 8.932l.432-.252-.504-.864-.432.252.504.864zm-6 3.5l6-3.5-.504-.864-6 3.5.504.864zm8.496-3.5l-.432-.252.504-.864.432.252-.504.864zm6 3.5l-6-3.5.504-.864 6 3.5-.504.864z"/>
+					</svg>|<a href="mailot:awabfedail3@gmail.com?" target="_blank"> awabfedail3@gmail.com</a> | <br> &nbsp; &nbsp; <a href="https://wa.me/249929218275" target="_blank">+249 92 921 8275</a><br><a href="https://twitter.com/AwabFedail?s=08"  target="_blank"> &nbsp; &nbsp; &nbsp; Twitter</a><br><a href="https://www.facebook.com/awab.fedail.3" target="-blank">&nbsp; &nbsp; &nbsp; facebook</a><br><a href="https://www.instagram.com/awab.m.f?r=nametag" target="-blank">&nbsp; &nbsp; &nbsp; instagram</a></span>
+					<span class="Arabic">soon! SDG Today By Arabic</span>
+					<p class="footer"><ul><li type=""><h3><u>Awab Mohammed Kheir Abd-Alrahman Ahmed Fedail</u></h3><kbd>
+						<li>country : sudan-khartoum.</li>
+						<li>university : Neelain-khartoum.</li><li>Faculty : Commerce.</li>
+						<li>level : one.</li>
+						<li>specialization : business administration.</li></kbd></li></ul></p>
+					<p class="ff"></p>
+			<span class="source"><a href="https://www.sudanakhbar.com" target="_blank">Source Of The Black Market price | </a> <a href="https://cbos.gov.sd" target="_blank">Source Of The Bank |</a></span>
+	 	</footer>
+		<script>
+			/*glopal console, alert, prompt*/
+	// DOLLAR
+var input =document.getElementById("dollar"),
+	message = document.getElementById("result"),
+	myCurrency = document.getElementById("currency");
+	myCurrency.onchange = function () {
+		"use strict";
+	result = input.value * myCurrency.value;	//select box
+	if (isNaN(input.value)) {message.innerHTML = "Sorry This Field Accept Number Only"}
+	else {message.innerHTML = input.value + " US Dollar = " + result + " sudanese pound";}
+	};
+	//EURO
+var myInputEuro = document.getElementById("euro"),
+	messageeuro = document.getElementById("resulteuro"),
+	myCurrencye = document.getElementById("currencye");
+	myCurrencye.onchange = function () {
+		"use strict";
+		resulteuro = myInputEuro.value * myCurrencye.value;
+		if (isNaN(myInputEuro.value)) {messageeuro.innerHTML = "Sorry This Field Accept Number Only"}
+		else {messageeuro.innerHTML = myInputEuro.value + " Euro = " +  resulteuro  +  " sudanese pound";} 
+	};
+	// SAR
+var myInputSar = document.getElementById("sar"),
+	messageSar = document.getElementById("resultsar"),
+	myCurrencySar = document.getElementById("currencysar");
+	myCurrencySar.onchange = function () {
+		"use strict";
+		resultsar = myInputSar.value * myCurrencySar.value;
+		if (isNaN(myInputSar.value)) {messageSar.innerHTML = "Sorry This Field Accept Number Only"}
+		else {messageSar.innerHTML = myInputSar.value + " SAR = " + resultsar + " Sudanese Pound";} 
+	};
+	// Sterling Pound
+var myInputSterling = document.getElementById("Sterling"),
+	messageSterling = document.getElementById("resultSterling"),
+	selectSterling = document.getElementById("selectSterling");
+	selectSterling.onchange = function () {
+		"use strict";
+		resultSterling = myInputSterling.value * selectSterling.value;
+		if (isNaN(myInputSterling.value)) {messageSterling.innerHTML = "Sorry This Field Accept Number Only"}
+		else {messageSterling.innerHTML = myInputSterling.value + " Sterling Pound = " + resultSterling + " Sudanese Pound";}
+	};
+	// Egyptain Pound
+var myInputEgyptain = document.getElementById("egyptianPound"),
+	messageEgyptain = document.getElementById("resultegyption"),
+	selectEgypt = document.getElementById("selectegypt");
+	selectEgypt.onchange = function () {
+		"use strict";
+		resultegyption = myInputEgyptain.value * selectEgypt.value;
+		if (isNaN(myInputEgyptain.value)) {messageEgyptain.innerHTML = "Sorry This Field Accept Number Only"}
+		else {messageEgyptain.innerHTML = myInputEgyptain.value + " Egyptain Pound = " + resultegyption + " Sudanese Pound";}
+	};
+	// UAE Dirham
+var myInputDirham = document.getElementById("dirham"),
+	messageDirham = document.getElementById("resultdirham"),
+	selectDirham = document.getElementById("selectdirham");
+	selectDirham.onchange = function () {
+		"use strict";
+		resultdirham = myInputDirham.value * selectDirham.value;
+		if (isNaN(myInputDirham.value)) {messageDirham.innerHTML = "Sorry This Field Accept Number Only"}
+		else {messageDirham.innerHTML = myInputEgyptain.value + " UAE Dirham = " + resultdirham + " Sudanese Pound";}
+	};
+	//QAR Riyal
+var myInputQar = document.getElementById("qar"),
+	messageQar = document.getElementById("resultqar"),
+	mySelectQar  = document.getElementById("selectqar");
+	mySelectQar.onchange = function () {
+		"use strict";
+		resultqar = myInputQar.value * mySelectQar.value;
+		if (isNaN(myInputQar.value)) {messageQar.innerHTML = "Sorry This Field Accept Number Only"}
+		else {messageQar.innerHTML = myInputQar.value + " Qatari Riyal = " + resultqar + " Sudanese Pound";}
+	};
+	//KWD
+var myInputKwd = document.getElementById("kwd"),
+	messageKwd = document.getElementById("resultkwd"),
+	mySelectKwd = document.getElementById("selectkwd");
+	mySelectKwd.onchange = function () {
+		"use strict";
+		resultkwd = myInputKwd.value * mySelectKwd.value;
+		if (isNaN(myInputKwd.value)) {messageKwd.innerHTML = " Sorry This Field Accept Number Only"}
+		else {messageKwd.innerHTML = myInputKwd.value + " Kuwaiti Dinar = " + resultkwd + " Sudanese Pound";}
+	};
+		</script>	
+	</body>
+</html>	
